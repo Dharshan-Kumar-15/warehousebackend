@@ -23,16 +23,16 @@ public class JwtProvider {
 	
 //	@Value("${app.SECRET_KEY}") application.properties 
 	// this is from Goggle 256 bit secret key generator
-	@Value("${jwt.secret}")
-	private  String SECRET_KEY_STRING;
-//	private final String SECRET_KEY_STRING="PNv44TBqzbWRxCfFHI2LK6DEfaeMwyrz";
 	
-	private final SecretKey SECRET_KEY=Keys.hmacShaKeyFor(SECRET_KEY_STRING.getBytes());
+	//private  String SECRET_KEY_STRING ;
+	private final String SECRET_KEY_STRING="PNv44TBqzbWRxCfFHI2LK6DEfaeMwyrz";
+	
+	private  SecretKey SECRET_KEY=Keys.hmacShaKeyFor(SECRET_KEY_STRING.getBytes());
 	
 //	@Value("${app.jwtExpirationMs}")
 	private  int jwtExpirationMs=3600000;
 	
-	//Constructor
+//	//Constructor
 //	public JwtProvider(SecretKey SECRET_KEY,int jwtExpirationMs) {
 //		this.SECRET_KEY=SECRET_KEY;
 //		this.jwtExpirationMs=jwtExpirationMs;
