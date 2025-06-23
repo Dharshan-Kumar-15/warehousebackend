@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/transport")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://warehousefrontend-production.up.railway.app")
 //@PreAuthorize("hasRole('TRANSPORTATION')")
 public class TransportController {
 	

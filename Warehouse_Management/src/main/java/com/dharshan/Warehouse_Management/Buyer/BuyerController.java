@@ -27,7 +27,7 @@ import com.dharshan.Warehouse_Management.userLogin.User;
 
 @RestController
 @RequestMapping("/buyer")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://warehousefrontend-production.up.railway.app")
 //@PreAuthorize("hasRole('BUYER')")
 public class BuyerController {
 	// Buyer and Order Controller 2um ethula iruku

@@ -30,7 +30,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RestController
 @RequestMapping("/admin")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://warehousefrontend-production.up.railway.app")
 //@PreAuthorize("hasRole('ADMIN')")
 public class ProductController {
 	
