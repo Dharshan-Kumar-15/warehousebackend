@@ -7,7 +7,7 @@ import javax.crypto.SecretKey;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;
@@ -23,7 +23,9 @@ public class JwtProvider {
 	
 //	@Value("${app.SECRET_KEY}") application.properties 
 	// this is from Goggle 256 bit secret key generator
-	private final String SECRET_KEY_STRING="PNv44TBqzbWRxCfFHI2LK6DEfaeMwyrz";
+	@Value("${jwt.secret}")
+	private  String SECRET_KEY_STRING;
+//	private final String SECRET_KEY_STRING="PNv44TBqzbWRxCfFHI2LK6DEfaeMwyrz";
 	
 	private final SecretKey SECRET_KEY=Keys.hmacShaKeyFor(SECRET_KEY_STRING.getBytes());
 	
