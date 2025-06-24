@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
 @RequestMapping("/warehouse")
-@CrossOrigin(origins = "https://warehousefrontend-production.up.railway.app")
+@CrossOrigin(origins = "http://localhost:4200")
 //@PreAuthorize("hasRole('WAREHOUSE')")
 public class WarehouseController {
 		@Autowired

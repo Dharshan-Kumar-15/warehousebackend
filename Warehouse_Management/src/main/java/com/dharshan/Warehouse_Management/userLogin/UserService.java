@@ -61,7 +61,7 @@ public class UserService {
 				switch(role) {
 				
 				case "ADMIN": 
-					
+							
 						Roles adminRole=rolesrepo.findByName(EnumRoles.ADMIN).orElseThrow(
 								
 						()-> new RuntimeException("ErrorAdmin: Role is Not Found"));

@@ -29,7 +29,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "https://warehousefrontend-production.up.railway.app")
+@CrossOrigin(origins = "http://localhost:4200")
 public class LoginController {
 		
 		@Autowired
